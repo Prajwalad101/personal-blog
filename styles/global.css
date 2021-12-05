@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-IBM {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.font-Merriweather {
+  font-family: 'Merriweather', serif;
+}
+
+.font-AlegreyaSans {
+  font-family: 'Alegreya Sans', sans-serif;
+}
