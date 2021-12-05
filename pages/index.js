@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Posts from '../components/content/posts';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Posts />
     </div>
   );
 }
