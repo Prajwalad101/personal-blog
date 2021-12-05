@@ -5,9 +5,12 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        heading: ['2.5rem', '10px'],
         heading2: ['1rem', '25px'],
-        heading3: ['1.1rem', '1.3'],
+        heading3: ['1.2rem', '1.3'],
+        post: ['1.3rem', '1.3'],
+      },
+      borderWidth: {
+        5: '5px',
       },
     },
   },

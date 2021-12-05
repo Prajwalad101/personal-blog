@@ -1,12 +1,12 @@
 function Post(props) {
   const { title, excerpt, date, readTime } = props;
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>
-        {date}. {readTime}
+    <div className='font-IBM'>
+      <h1 className='font-semibold mb-3 text-2xl '>{title}</h1>
+      <p className='font-IBM text-sm font-medium opacity-70 '>
+        November 16, 2021 . {readTime} min read
       </p>
-      <p>{excerpt}</p>
+      <p className='font-sans text-base'>{excerpt}</p>
     </div>
   );
 }
