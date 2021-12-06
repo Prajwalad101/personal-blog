@@ -4,7 +4,7 @@ import Heading from '../components/heading';
 
 export default function Home() {
   return (
-    <div className='container mx-auto px-7'>
+    <div className='container mx-auto px-7 max-w-3xl'>
       <Head>
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
