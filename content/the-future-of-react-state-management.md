@@ -8,3 +8,5 @@ excerpt: 'Learn about the history of state management in React and what the pref
 # This is a title
 
 This is a regular text with a [Link text Here](https://google.com)
+
+![manage react state with different methods](reactjs-state-management.jpg)

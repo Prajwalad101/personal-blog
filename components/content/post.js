@@ -5,7 +5,6 @@ function Post(props) {
   const { title, excerpt, date, readTime, slug } = props.post;
 
   const linkPath = `/posts/${slug}`;
-  console.log(linkPath);
 
   return (
     <div className='font-IBM '>
