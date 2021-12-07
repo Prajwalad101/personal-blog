@@ -1,15 +1,15 @@
 import ReactMarkdown from 'react-markdown';
 
 import PostHeader from './post-header';
-import dummyData from '../../utils/dummy-data';
 
-function PostContent() {
-  const dummyPost = dummyData[0];
-  const imagePath = `/images/posts/${dummyPost.slug}/${dummyPost.image}`;
+function PostContent(props) {
+  const { post } = props;
+
+  const imagePath = `/images/posts/${post.slug}/${post.image}`;
   return (
     <article>
-      <PostHeader title={dummyPost.title} image={imagePath} />
-      <ReactMarkdown>{dummyPost.content}</ReactMarkdown>
+      <PostHeader title={post.title} image={imagePath} />
+      <ReactMarkdown>{post.content}</ReactMarkdown>
     </article>
   );
 }
