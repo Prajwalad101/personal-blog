@@ -10,13 +10,7 @@ function Posts(props) {
       </h1>
       <div className='space-y-9'>
         {posts.map((post) => (
-          <Post
-            title={post.title}
-            excerpt={post.excerpt}
-            date={post.date}
-            readTime={post.readTime}
-            key={getUniqueId(post)}
-          />
+          <Post post={post} key={getUniqueId(post)} />
         ))}
       </div>
     </>

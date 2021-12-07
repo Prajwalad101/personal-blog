@@ -1,5 +1,5 @@
-import PostContent from '../components/post-detail/post-content';
-import { getPostData, getPostsFiles } from '../utils/posts-util';
+import PostContent from '../../components/post-detail/post-content';
+import { getPostData, getPostsFiles } from '../../utils/posts-util';
 
 function PostDetailPage(props) {
   return <PostContent post={props.post} />;
