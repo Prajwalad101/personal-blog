@@ -9,4 +9,14 @@ excerpt: 'Learn about the history of state management in React and what the pref
 
 This is a regular text with a [Link text Here](https://google.com)
 
+```js
+const basics = 'Okay, that should not be that difficult';
+
+function printBasics() {
+  console.log(basics);
+}
+
+printBasics();
+```
+
 ![manage react state with different methods](reactjs-state-management.jpg)
