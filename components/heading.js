@@ -7,17 +7,14 @@ function Heading() {
         <Image src='/images/profile.png' width={80} height={80} />
       </div>
       <div className='font-IBM'>
-        <span className='opacity-70 text-heading2 font-sans font-medium'>
+        <span className='opacity-70 text-heading2 font-firaCode font-medium '>
           Personal Blog by
         </span>
-        <h1 className='font-IBM font-extrabold text-3xl'>Prajwal Adhikari</h1>
-        <p className='font-AlegreyaSans font-regular opacity-90 text-heading3 my-3 '>
-          On{' '}
-          <span className='font-medium'>
-            {' '}
-            Javascript, React, NextJs, Tailwind{' '}
-          </span>
-          and new ways to confuse myself
+        <h1 className='font-Poppins font-extrabold text-3xl '>
+          Prajwal Adhikari
+        </h1>
+        <p className='font-Poppins font-normal text-heading2 my-3 '>
+          On Javascript, React, NextJs, Tailwind and new ways to confuse myself
         </p>
       </div>
     </div>

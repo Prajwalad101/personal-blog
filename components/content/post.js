@@ -5,22 +5,18 @@ function Post(props) {
   const { title, excerpt, date, readTime, slug } = props.post;
 
   const linkPath = `/posts/${slug}`;
-
   return (
-    <div className='font-IBM '>
+    <div>
       <Link href={linkPath}>
         <a>
-          <h1 className='font-extrabold mb-3 text-2xl '>{title}</h1>
-          <div className='flex gap-3 items-center'>
-            {' '}
-            <span className='font-IBM text-sm font-medium opacity-70 '>
-              November 16, 2021 . {readTime} min read
-            </span>
-            <span className='text-gray-500'>
-              <FiCoffee size={18} />
-            </span>
-          </div>
-          <p className='font-AlegreyaSans text-excerpt'>{excerpt}</p>
+          {/* Title */}
+          <h1 className='font-IBM font-black mb-3 text-2xl '>{title}</h1>
+          {/* Date */}
+          <p className='font-firaCode text-sm font-medium text-gray-600 mb-1'>
+            November 16, 2021 . {readTime} min read
+          </p>
+          {/* Excerpt */}
+          <p className='font-lora font-medium text-lg'>{excerpt}</p>
         </a>
       </Link>
     </div>

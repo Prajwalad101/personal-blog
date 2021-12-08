@@ -2,14 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow: hidden;
+}
+
 .font-IBM {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.font-Merriweather {
-  font-family: 'Merriweather', serif;
+.font-Poppins {
+  font-family: 'Poppins', sans-serif;
 }
 
-.font-AlegreyaSans {
-  font-family: 'Alegreya Sans', sans-serif;
+.font-lora {
+  font-family: 'Lora', serif;
+}
+
+.font-firaCode {
+  font-family: 'Fira Code', monospace;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes navLinkFadeBack {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.navFade {
+  animation: navLinkFade 0.8s ease forwards 0.5s;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.line1,
+line2,
+line3 {
+  transition: all 0.4s ease;
 }

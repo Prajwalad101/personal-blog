@@ -10,10 +10,12 @@ module.exports = {
         heading2: ['1rem', '25px'],
         heading3: ['1.2rem', '1.3'],
         post: ['1.3rem', '1.3'],
-        excerpt: '1.2rem',
       },
       borderWidth: {
         5: '5px',
+      },
+      spacing: {
+        3: '3px',
       },
     },
   },
