@@ -16,13 +16,19 @@ function NavItem({ active }) {
   return (
     <ul className={navClassName}>
       <li className={linkClassName}>
-        <button>Home</button>
+        <button>
+          <span className='font-IBM md:text-lg'>Home</span>
+        </button>
       </li>
       <li className={linkClassName}>
-        <button>Blog</button>
+        <button>
+          <span className='font-IBM md:text-lg'>Blog</span>
+        </button>
       </li>
       <li className={linkClassName}>
-        <button>About</button>
+        <button>
+          <span className='font-IBM md:text-lg'>About</span>
+        </button>
       </li>
     </ul>
   );

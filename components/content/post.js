@@ -10,9 +10,11 @@ function Post(props) {
       <Link href={linkPath}>
         <a>
           {/* Title */}
-          <h1 className='font-IBM font-black mb-3 text-2xl '>{title}</h1>
+          <h1 className='font-IBM font-black mb-[10px] text-2xl md:text-[28px] '>
+            {title}
+          </h1>
           {/* Date */}
-          <p className='font-firaCode text-sm font-medium text-gray-600 mb-1'>
+          <p className='font-firaCode text-[15px] font-medium text-gray-600'>
             November 16, 2021 . {readTime} min read
           </p>
           {/* Excerpt */}
