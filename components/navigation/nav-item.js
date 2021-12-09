@@ -16,34 +16,34 @@ function NavItem({ active, setActive }) {
   return (
     <ul className={navClassName}>
       <li className={linkClassName}>
-        <button
-          className='hover:text-gray-600 font-semibold'
-          onClick={() => setActive(false)}
+        <p
+          className={'hover:text-gray-600 font-IBM md:text-lg'}
+          onClick={() => {
+            setActive(false);
+          }}
         >
-          <Link href='/' className='font-IBM md:text-lg'>
-            Home
-          </Link>
-        </button>
+          <Link href='/'>Home</Link>
+        </p>
       </li>
       <li className={linkClassName}>
-        <button
-          className='hover:text-gray-600'
+        <p
+          className='hover:text-gray-600 font-IBM md:text-lg'
           onClick={() => setActive(false)}
         >
           <Link href='/blog' className='font-IBM md:text-lg'>
             Blog
           </Link>
-        </button>
+        </p>
       </li>
       <li className={linkClassName}>
-        <button
-          className='hover:text-gray-600'
+        <p
+          className='hover:text-gray-600 font-IBM md:text-lg'
           onClick={() => setActive(false)}
         >
           <Link href='/about' className='font-IBM md:text-lg'>
             About
           </Link>
-        </button>
+        </p>
       </li>
     </ul>
   );

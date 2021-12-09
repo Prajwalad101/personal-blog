@@ -12,7 +12,7 @@ export default function Home(props) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Heading />
-      <PostsGrid posts={props.posts} postType='posts' />
+      <PostsGrid posts={props.posts} postType='Featured' />
     </div>
   );
 }
