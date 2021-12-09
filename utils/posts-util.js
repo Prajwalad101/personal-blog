@@ -9,7 +9,7 @@ export function getPostsFiles() {
   return fs.readdirSync(postsDirectory);
 }
 
-// Returns an array containing objects of all posts
+// Returns an array containing posts
 export function getAllPosts() {
   const postFiles = getPostsFiles();
 
@@ -22,6 +22,14 @@ export function getAllPosts() {
   );
 
   return sortedPosts;
+}
+
+// Returns an array containing all the featured posts
+export function getFeaturedPosts() {
+  const allPosts = getAllPosts();
+  const featuredPosts = allPosts.filter((post) => post.isFeatured);
+
+  return featuredPosts;
 }
 
 // Returns an object containing data about a specific post

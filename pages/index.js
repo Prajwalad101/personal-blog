@@ -1,8 +1,8 @@
 import Head from 'next/head';
 
-import Posts from '../components/content/posts';
+import PostsGrid from '../components/posts/post-grid';
 import Heading from '../components/heading';
-import { getAllPosts } from '../utils/posts-util';
+import { getFeaturedPosts } from '../utils/posts-util';
 
 export default function Home(props) {
   return (
@@ -12,13 +12,13 @@ export default function Home(props) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Heading />
-      <Posts posts={props.posts} />
+      <PostsGrid posts={props.posts} postType='posts' />
     </div>
   );
 }
 
 export function getStaticProps() {
-  const allPosts = getAllPosts();
+  const allPosts = getFeaturedPosts();
 
   return {
     props: {
