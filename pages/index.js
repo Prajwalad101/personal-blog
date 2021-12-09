@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import Posts from '../components/content/posts';
 import Heading from '../components/heading';
 import { getAllPosts } from '../utils/posts-util';

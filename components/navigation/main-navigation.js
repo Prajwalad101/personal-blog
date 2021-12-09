@@ -15,7 +15,7 @@ function MainNavigation() {
   return (
     <nav className='flex justify-between items-center px-7 my-4 mx-auto max-w-3xl'>
       {/* NavItem */}
-      <NavItem active={isActive} />
+      <NavItem active={isActive} setActive={setIsActive} />
       {/* Burgur Menu */}
       <div
         onClick={toggleClass}
