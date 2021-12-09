@@ -4,6 +4,7 @@ date: '2022-10-16'
 image: 'the-future-of-react-state-management.png'
 excerpt: 'Learn about the history of state management in React and what the preferred solutions are today'
 isFeatured: true
+author: 'Prajwal Adhikari'
 readTime: 5
 ---
 

@@ -13,7 +13,7 @@ function MainNavigation() {
   let burgerClassname = 'sm:hidden ';
 
   return (
-    <nav className='flex justify-between items-center px-7 my-4 mx-auto max-w-3xl'>
+    <nav className='flex justify-between items-center px-7 mt-8 mb-4 mx-auto max-w-3xl'>
       {/* NavItem */}
       <NavItem active={isActive} setActive={setIsActive} />
       {/* Burgur Menu */}

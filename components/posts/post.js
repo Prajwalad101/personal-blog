@@ -1,15 +1,12 @@
 import Link from 'next/link';
-import { FiCoffee } from 'react-icons/fi';
+
+import { formatDate } from '../../utils/postFunctions';
 
 function Post(props) {
   const { title, excerpt, date, readTime, slug } = props.post;
   const linkPath = `/posts/${slug}`;
 
-  const formattedDate = new Date(date).toLocaleDateString('en-US', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
+  const formattedDate = formatDate(date);
 
   return (
     <div>

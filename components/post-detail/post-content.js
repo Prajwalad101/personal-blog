@@ -8,7 +8,12 @@ import PostHeader from './post-header';
 function PostContent(props) {
   const { post } = props;
 
-  const imagePath = `/images/posts/${post.slug}/${post.image}`;
+  let imagePath;
+  if (post.image) {
+    imagePath = `/images/posts/${post.slug}/${post.image}`;
+  } else {
+    imagePath = undefined;
+  }
 
   const customComponent = {
     p(paragraph) {
@@ -22,6 +27,7 @@ function PostContent(props) {
             alt={image.properties.alt}
             width='600'
             height='300'
+            className='rounded'
           />
         );
       }
@@ -47,9 +53,20 @@ function PostContent(props) {
   };
 
   return (
-    <article>
-      <PostHeader title={post.title} image={imagePath} />
-      <ReactMarkdown components={customComponent}>{post.content}</ReactMarkdown>
+    <article className='container mx-auto px-7 max-w-3xl'>
+      <PostHeader
+        title={post.title}
+        author={post.author}
+        date={post.date}
+        readTime={post.readTime}
+        image={imagePath}
+      />
+      <ReactMarkdown
+        components={customComponent}
+        className='post-content font-lora'
+      >
+        {post.content}
+      </ReactMarkdown>
     </article>
   );
 }
