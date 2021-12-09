@@ -8,7 +8,7 @@ export default function Home(props) {
   return (
     <div className='container mx-auto px-7 max-w-3xl'>
       <Head>
-        <title>Create Next App</title>
+        <title>Prajwal Adhikari - Developer, Designer, Writer</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Heading />
@@ -18,11 +18,12 @@ export default function Home(props) {
 }
 
 export function getStaticProps() {
-  const allPosts = getFeaturedPosts();
+  // gets an array containing the featured posts
+  const featuredPosts = getFeaturedPosts();
 
   return {
     props: {
-      posts: allPosts,
+      posts: featuredPosts,
     },
   };
 }

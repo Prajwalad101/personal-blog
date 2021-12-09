@@ -1,20 +1,30 @@
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { duotoneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import duotoneDark from 'react-syntax-highlighter/dist/cjs/styles/prism/duotone-dark';
+import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript';
+import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css';
 
 import PostHeader from './post-header';
+
+// registering only certain languages to keep the file size down
+SyntaxHighlighter.registerLanguage('js', js);
+SyntaxHighlighter.registerLanguage('css', css);
 
 function PostContent(props) {
   const { post } = props;
 
+  // checking if there is an image to render in the post content
   let imagePath;
   if (post.image) {
+    // if true create a path to that image
     imagePath = `/images/posts/${post.slug}/${post.image}`;
   } else {
+    // if not return the path as undefined to be then checked later
     imagePath = undefined;
   }
 
+  // changing how react markdown renders codeSnippets and images
   const customComponent = {
     p(paragraph) {
       const { node } = paragraph;

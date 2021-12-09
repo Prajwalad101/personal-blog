@@ -4,6 +4,7 @@ import ThemeSwitcher from './ThemeSwitcher';
 import NavItem from './nav-item';
 
 function MainNavigation() {
+  // to check if the navBar is active (used while rendering the navbar in small screens)
   const [isActive, setIsActive] = useState();
 
   const toggleClass = () => {

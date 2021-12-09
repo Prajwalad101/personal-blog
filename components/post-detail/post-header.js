@@ -16,9 +16,9 @@ function PostHeader(props) {
       <div className='font-IBM text-sm my-6 flex flex-col items-start gap-1 md:text-base'>
         <div className='flex items-center gap-[10px]'>
           <Image src='/images/profile.png' width={25} height={25} />
-          <p>{author}</p>
+          <p className='font-medium text-gray-700'>{author}</p>
         </div>
-        <span>
+        <span className='text-gray-500 font-medium font-lora'>
           {formattedDate} . {readTime} min read
         </span>
       </div>

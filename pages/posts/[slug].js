@@ -20,8 +20,10 @@ export function getStaticProps(context) {
 }
 
 export function getStaticPaths() {
+  // gets an array of fileNames(markdown)
   const postFilenames = getPostsFiles();
 
+  // removing the extension from the markdown fileName to get the slug
   const slugs = postFilenames.map((fileName) => fileName.replace(/\.md$/, ''));
 
   return {
