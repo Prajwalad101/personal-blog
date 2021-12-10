@@ -5,7 +5,7 @@ function Posts(props) {
   const { posts, postType } = props;
   return (
     <>
-      <h1 className='font-lora font-medium text-xl capitalize opacity-80 mb-6 border-l-5 pl-[15px] md:text-[23px] border-blue-400'>
+      <h1 className='font-lora font-medium text-xl text-gray-700 capitalize mb-6 border-l-5 pl-[15px] md:text-[23px] border-blue-400 dark:border-dark-text dark:text-gray-300'>
         {postType}
       </h1>
       <div className='space-y-12'>

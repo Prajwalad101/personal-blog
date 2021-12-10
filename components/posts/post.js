@@ -17,7 +17,7 @@ function Post(props) {
             {title}
           </h1>
           {/* Date */}
-          <p className='font-firaCode text-[15px] font-medium text-gray-600'>
+          <p className='font-firaCode text-[15px] font-medium text-gray-600 dark:text-gray-400'>
             {formattedDate} . {readTime} min read
           </p>
           {/* Excerpt */}

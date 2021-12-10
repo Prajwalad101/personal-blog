@@ -10,15 +10,21 @@ function PostHeader(props) {
 
   return (
     <header className='mt-10 sm:mt-16'>
-      <h1 className='font-IBM text-[27px] leading-9 font-bold mb-1 md:text-[37px]'>
+      {/* TITLE */}
+      <h1 className='font-IBM text-[34px] leading-tight font-bold mb-1 md:text-[43px]'>
         {title}
       </h1>
       <div className='font-IBM text-sm my-6 flex flex-col items-start gap-1 md:text-base'>
         <div className='flex items-center gap-[10px]'>
+          {/* IMAGE */}
           <Image src='/images/profile.png' width={25} height={25} />
-          <p className='font-medium text-gray-700'>{author}</p>
+          {/* AUTHOR */}
+          <p className='font-medium text-gray-700 dark:text-gray-200'>
+            {author}
+          </p>
         </div>
-        <span className='text-gray-500 font-medium font-lora'>
+        {/* DATE / READTIME */}
+        <span className='text-gray-500 font-medium font-lora dark:text-gray-300'>
           {formattedDate} . {readTime} min read
         </span>
       </div>

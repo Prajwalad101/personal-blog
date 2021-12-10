@@ -73,7 +73,7 @@ function PostContent(props) {
       />
       <ReactMarkdown
         components={customComponent}
-        className='post-content font-lora'
+        className='post-content font-lora dark:border-dark-text '
       >
         {post.content}
       </ReactMarkdown>

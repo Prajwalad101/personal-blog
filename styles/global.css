@@ -57,23 +57,16 @@ body {
 }
 
 .line1,
-line2,
-line3 {
+.line2,
+.line3 {
   transition: all 0.4s ease;
 }
 
-.post-content h1 {
-  font-size: 1.5rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 700;
-  padding-left: 10px;
-  margin: 25px 0 17px 0;
-  border-left-width: 5px;
-  --tw-border-opacity: 1;
-  border-color: rgba(96, 165, 250, var(--tw-border-opacity));
-}
-
-.post-content a {
-  font-weight: 600;
-  text-decoration: underline;
+@layer components {
+  .post-content > h1 {
+    @apply font-IBM text-[27px] mt-[25px] mb-[17px] pl-[10px] font-bold border-l-5 md:text-3xl border-blue-400 dark:border-dark-text;
+  }
+  .post-content a {
+    @apply underline text-blue-400 font-semibold dark:text-dark-text;
+  }
 }
