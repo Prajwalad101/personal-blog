@@ -13,15 +13,15 @@ function Post(props) {
       <Link href={linkPath}>
         <a>
           {/* Title */}
-          <h1 className='font-IBM font-black mb-[10px] text-2xl md:text-[28px] '>
+          <h1 className="font-IBM font-black mb-[10px] text-2xl md:text-[28px] ">
             {title}
           </h1>
           {/* Date */}
-          <p className='font-firaCode text-[15px] font-medium text-gray-600 dark:text-gray-400'>
+          <p className="font-firaCode text-[15px] font-medium text-gray-600 dark:text-gray-400">
             {formattedDate} . {readTime} min read
           </p>
           {/* Excerpt */}
-          <p className='font-lora font-medium text-lg'>{excerpt}</p>
+          <p className="font-lora font-medium text-lg">{excerpt}</p>
         </a>
       </Link>
     </div>

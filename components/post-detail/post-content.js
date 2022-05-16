@@ -32,13 +32,15 @@ function PostContent(props) {
       if (node.children[0].tagName === 'img') {
         const image = node.children[0];
         return (
-          <Image
-            src={`/images/posts/${post.slug}/${image.properties.src}`}
-            alt={image.properties.alt}
-            width='600'
-            height='300'
-            className='rounded'
-          />
+          <div className="my-5">
+            <Image
+              src={`/images/posts/${post.slug}/${image.properties.src}`}
+              alt={image.properties.alt}
+              width="600"
+              height="300"
+              className="rounded"
+            />
+          </div>
         );
       }
       return <p>{paragraph.children}</p>;
@@ -51,7 +53,7 @@ function PostContent(props) {
         <SyntaxHighlighter
           style={duotoneDark}
           language={match[1]}
-          PreTag='div'
+          PreTag="div"
           // className='codeStyle'
           showLineNumbers={true}
           {...props}
@@ -63,7 +65,7 @@ function PostContent(props) {
   };
 
   return (
-    <article className='container mx-auto px-7 max-w-3xl'>
+    <article className="container mx-auto px-7 max-w-3xl mb-10">
       <PostHeader
         title={post.title}
         author={post.author}
@@ -73,7 +75,7 @@ function PostContent(props) {
       />
       <ReactMarkdown
         components={customComponent}
-        className='post-content font-lora dark:border-dark-text '
+        className="post-content font-lora"
       >
         {post.content}
       </ReactMarkdown>
