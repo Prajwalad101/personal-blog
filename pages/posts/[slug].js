@@ -1,8 +1,16 @@
+import Head from 'next/head';
 import PostContent from '../../components/post-detail/post-content';
 import { getPostData, getPostsFiles } from '../../utils/posts-util';
 
 function PostDetailPage(props) {
-  return <PostContent post={props.post} />;
+  return (
+    <>
+      <Head>
+        <title>{props.post.title} | Prajwal Adhikari</title>
+      </Head>
+      <PostContent post={props.post} />
+    </>
+  );
 }
 
 export function getStaticProps(context) {
