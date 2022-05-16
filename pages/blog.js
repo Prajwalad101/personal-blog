@@ -9,7 +9,7 @@ function BlogPage(props) {
       <Head>
         <title>Blog - Prajwal Adhikari</title>
       </Head>
-      <Blog posts={props.posts} />;
+      <Blog posts={props.posts} />
     </>
   );
 }

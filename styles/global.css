@@ -64,9 +64,17 @@ body {
 
 @layer components {
   .post-content > h1 {
-    @apply font-IBM text-[27px] mt-[25px] mb-[17px] pl-[10px] font-bold border-l-5 md:text-3xl border-blue-400 dark:border-dark-text;
+    @apply font-IBM text-[27px] mt-[25px] mb-[17px] font-bold md:text-3xl border-blue-400 dark:border-dark-text;
+  }
+
+  .post-content > h2 {
+    @apply font-IBM text-xl mt-[25px] mb-[17px] pl-[10px] font-bold border-l-5 md:text-2xl border-blue-400 dark:border-dark-text;
   }
   .post-content a {
     @apply underline text-blue-400 font-semibold dark:text-dark-text;
+  }
+
+  .post-content p {
+    @apply text-lg leading-relaxed;
   }
 }
